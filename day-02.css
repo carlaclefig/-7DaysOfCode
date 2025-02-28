@@ -1,0 +1,115 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(248, 248, 248);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Contenedor del formulario */
+.form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 320px;
+}
+
+.form__fieldset {
+  border: none;
+  padding: 0;
+}
+
+.form__legend {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Grupos de entrada */
+.form__group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form__label {
+  font-size: 1em;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form__input {
+  width: 95%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+/* Botón principal */
+.form__button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 10px 0px;
+}
+
+.form__button:hover {
+  background-color: #0056b3;
+}
+
+/* Resultado */
+.form__result {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Sección Opcional */
+.form__optional {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.form__optional-content {
+  display: none; /* Ocultar inicialmente */
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+.form__optional-question {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+/* Opciones Sí/No */
+.form__optional-choices {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.form__optional-label {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.form__optional-result {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
