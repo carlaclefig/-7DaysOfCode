@@ -6,24 +6,41 @@
     <title>Día 2</title>
   </head>
   <body>
-    <section>
-      <fieldset>
-        <legend>Ingrese sus datos</legend>
-        <div>
-          <p>¿Cuál es tu nombre?</p>
-          <input type="text" placeholder="Carla Clemente" />
+    <section class="form">
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Ingrese sus datos</legend>
+        <div class="form__group">
+          <p class="form__label">¿Cuál es tu nombre?</p>
+          <input
+            type="text"
+            class="form__input form__input--name"
+            placeholder="Carla Clemente"
+          />
         </div>
-        <div>
-          <p>¿Cuántos años tienes?</p>
-          <input type="number" placeholder="23" />
+        <div class="form__group">
+          <p class="form__label">¿Cuántos años tienes?</p>
+          <input
+            type="number"
+            class="form__input form__input--years"
+            placeholder="23"
+          />
         </div>
-        <div>
-          <p>¿Qué lenguaje de programación estás estudiando?</p>
-          <input type="text" placeholder="Python" />
+        <div class="form__group">
+          <p class="form__label">
+            ¿Qué lenguaje de programación estás estudiando?
+          </p>
+          <input
+            type="text"
+            class="form__input form__input--language"
+            placeholder="Python"
+          />
         </div>
-        <button>Completado</button>
-        <output></output>
+        <button class="form__button" onclick="generateText()">
+          Completado
+        </button>
+        <output class="form__result"></output>
       </fieldset>
     </section>
+    <script src="day-02.js"></script>
   </body>
 </html>
