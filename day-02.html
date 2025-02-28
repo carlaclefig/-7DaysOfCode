@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Día 2</title>
+    <link rel="stylesheet" href="day-02.css" />
   </head>
   <body>
     <section class="form">
@@ -40,6 +41,31 @@
         </button>
         <output class="form__result"></output>
       </fieldset>
+    </section>
+    <section class="form__optional">
+      <button class="form__button" onclick="showOption()">Opcional</button>
+      <div id="content" class="form__optional-content">
+        <p class="form__optional-question"></p>
+        <div class="form__optional-choices">
+          <label class="form__optional-label">
+            <input
+              type="radio"
+              name="subject"
+              value="yes"
+              class="form__optional-input"
+            />SÍ
+          </label>
+          <label class="form__optional-label">
+            <input
+              type="radio"
+              name="subject"
+              value="no"
+              class="form__optional-input"
+            />NO
+          </label>
+        </div>
+        <output class="form__optional-result"></output>
+      </div>
     </section>
     <script src="day-02.js"></script>
   </body>
