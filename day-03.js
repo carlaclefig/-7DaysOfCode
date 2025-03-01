@@ -10,3 +10,14 @@ if (option == 1) {
 } else {
   alert("¡No ingresaste un área válida!");
 }
+
+let fullstack = prompt(
+  "¿Quieres convertirte en desarollador fullstack? (sí o no)"
+);
+if (fullstack == "sí" || fullstack == "SI" || fullstack == "si") {
+  alert(
+    "Tienes que estudiar nuevas tecnologías para complementar tu aprendisaje."
+  );
+} else {
+  alert(`Ponle mucho empeño estudiando el lenguaje de ${language}.`);
+}
